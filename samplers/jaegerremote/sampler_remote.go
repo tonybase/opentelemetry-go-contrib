@@ -275,7 +275,6 @@ type httpSamplingStrategyFetcher struct {
 func newHTTPSamplingStrategyFetcher(serverURL string) *httpSamplingStrategyFetcher {
 	customTransport := http.DefaultTransport.(*http.Transport).Clone()
 	customTransport.ResponseHeaderTimeout = defaultRemoteSamplingTimeout
-
 	return &httpSamplingStrategyFetcher{
 		serverURL: serverURL,
 		httpClient: http.Client{
