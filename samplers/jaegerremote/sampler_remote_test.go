@@ -26,8 +26,8 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	jaeger_api_v2 "go.opentelemetry.io/contrib/samplers/jaegerremote/internal/proto-gen/jaeger-idl/proto/api_v2"
-	"go.opentelemetry.io/contrib/samplers/jaegerremote/internal/testutils"
+	jaeger_api_v2 "github.com/tonybase/opentelemetry-go-contrib/samplers/jaegerremote/internal/proto-gen/jaeger-idl/proto/api_v2"
+	"github.com/tonybase/opentelemetry-go-contrib/samplers/jaegerremote/internal/testutils"
 	"go.opentelemetry.io/otel/sdk/trace"
 	oteltrace "go.opentelemetry.io/otel/trace"
 )
